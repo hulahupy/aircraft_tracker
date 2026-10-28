@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "aircraft-tracker"
+version = "0.1.0"
+description = "Учебный проект: сбор состояний воздушных судов OpenSky и хранение в PostgreSQL"
+authors = ["Student <student@example.com>"]
+readme = "README.md"
+packages = [{ include = "aircraft_tracker" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.0"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[tool.poetry.scripts]
+aircraft-tracker = "aircraft_tracker.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
