@@ -13,7 +13,7 @@ COUNTRIES = [
     ("Switzerland", "ch"),
 ]
 
-NOMINATIM_USER_AGENT = "AircraftTrackerEducationalProject/1.0 (contact: student@example.com)"
+NOMINATIM_USER_AGENT = "AircraftTrackerEducationalProject/1.0 (contact: hulahupy@gmail.com)"
 REQUEST_TIMEOUT = 30
 OPENSKY_TIMEOUT = 60
 NOMINATIM_DELAY_SECONDS = 1.1

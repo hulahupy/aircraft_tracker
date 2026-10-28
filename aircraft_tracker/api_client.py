@@ -59,10 +59,14 @@ class APIClient:
             self.NOMINATIM_URL,
             params={
                 "country": country_name,
-                "countrycodes": country_code,
+                "countrycodes": country_code.lower(),
                 "featureType": "country",
                 "format": "jsonv2",
                 "limit": 1,
+            },
+            headers={
+                "User-Agent": NOMINATIM_USER_AGENT,
+                "Accept": "application/json",
             },
             timeout=REQUEST_TIMEOUT,
         )
